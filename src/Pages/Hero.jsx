@@ -4,7 +4,7 @@ import '../assets/styles/Hero.css';
 
 export default function Hero() {
   return (
-    <section className="hero-section">
+    <section className="hero-section spacer layer1">
       <div className="video-background">
         <video
           autoPlay
@@ -15,7 +15,7 @@ export default function Hero() {
         >
           <source src="/video-background.mp4" type="video/mp4" />
         </video>
-        <div className="overlay"></div>
+     
       </div>
       <div className="content-container">
         <motion.h1 

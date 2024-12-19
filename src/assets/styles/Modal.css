@@ -1,0 +1,15 @@
+.custom-modal .ant-modal-content {
+    background-color: #545a72;
+    height: 500px;
+  }
+  
+  .custom-modal .ant-modal-header {
+    background-color: #545a72; /* Change the header background color */
+    border-bottom: none; /* Optional: Remove the bottom border */
+  }
+  
+  .custom-modal .ant-modal-title {
+    color: #0f2027; /* Change the title color */
+  }
+  
+  

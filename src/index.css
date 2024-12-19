@@ -4,10 +4,41 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
-
+  background-color: #0F2027;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1{
+  background-image: url('./assets/images/backgrounds/back1.svg');
+}
+
+.layer2{
+  background-image: url('./assets/images/backgrounds/back22.svg');
+}
+
+.layer3{
+  background-image: url('./assets/images/backgrounds/back33.svg');
+}
+
+.layer4{
+  background-image: url('./assets/images/backgrounds/stacked.svg');
+}
+
+.layer5{
+  background-image: url('./assets/images/backgrounds/back4.svg');
+}
+
+.layer6{
+  background-image: url('./assets/images/backgrounds/contact.svg');
 }

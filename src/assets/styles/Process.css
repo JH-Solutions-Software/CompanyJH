@@ -1,7 +1,6 @@
 .process-section {
     padding-top: 80px;
     padding-bottom: 80px;
-    margin-bottom: 80px;
 }
 
 .process-container {
@@ -14,9 +13,9 @@
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    color: #aaa; /* Primary color */
+    color: #FFFFFF; /* Primary color */
     margin-bottom: 40px;
-    background: #aaa;
+    background: #FFFFFF;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -55,7 +54,7 @@
 
 /* Card Styles */
 .card {
-    background-color: #000000;
+    background-color: #2d3d4c;
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 25px;
@@ -75,7 +74,7 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background-color: rgba(245, 158, 11, 0.1);
+    background-color: #0f2027;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +82,7 @@
 }
 
 .card-icon .icon {
-    color: #f59e0b;
+    color: #eeb7cd;
     width: 28px;
     height: 28px;
 }

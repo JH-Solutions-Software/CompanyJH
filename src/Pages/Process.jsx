@@ -32,7 +32,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="proceso" className="process-section">
+    <section id="proceso" className="process-section spacer layer3">
       <div className="process-container">
         <motion.h2 
           className="process-title"

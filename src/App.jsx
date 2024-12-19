@@ -7,6 +7,8 @@ import Services from './Pages/Services.jsx';
 import Process from './Pages/Process.jsx';
 import Technologies from './Pages/Technologies.jsx';
 import Projects from "./Pages/Projects.jsx";
+import Team from "./Pages/Team.jsx"
+import Contact from './Pages/Contact.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,7 +20,9 @@ function App() {
         <Services />
         <Process />
         <Technologies />
+        <Team/>
         <Projects />
+        <Contact/>
       </div>
     </Router>
   )

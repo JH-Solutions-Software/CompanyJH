@@ -26,7 +26,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="services-section">
+    <section id="servicios" className="spacer layer2 services-section ">
       <div className="services-container">
         <h2 className="services-title">Nuestros Servicios</h2>
         <div className="services-grid">

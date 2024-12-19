@@ -33,7 +33,7 @@ const Technologies = () => {
   ];
 
   return (
-    <section className="section">
+    <section className="section spacer layer4">
       <div className="container">
         <h2 className="title">Tecnologías que manejamos</h2>
         <div className="grid">
@@ -46,7 +46,7 @@ const Technologies = () => {
                     key={techIndex}
                     className="listItem"
                     onMouseEnter={(e) => (e.target.querySelector('.text').style.color = 'white')}
-                    onMouseLeave={(e) => (e.target.querySelector('.text').style.color = '#aaa')}
+                    onMouseLeave={(e) => (e.target.querySelector('.text').style.color = 'white')}
                   >
                     {tech.icon}
                     <span className="text">{tech.name}</span>

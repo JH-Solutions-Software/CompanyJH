@@ -61,6 +61,7 @@
   justify-content: center;
   animation: fadeInUp 1.4s ease-in-out;
   flex-wrap: wrap;
+  margin-top: -15px;
 }
 
 .primary-button, .secondary-button {
@@ -70,25 +71,29 @@
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
   transition: background 0.3s, transform 0.3s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .primary-button {
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  background: linear-gradient(135deg, #837895 0%, #eeb7cd 100%);
+
 }
 
 .primary-button:hover {
-  background: linear-gradient(135deg, #0056b3 0%, #003f7f 100%);
+  background: linear-gradient(135deg, #2d3d4c 0%, #837895 100%);
   transform: translateY(-3px);
 }
 
 .secondary-button {
-  background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+  background: linear-gradient(135deg, #2d3d4c 0%, #545a72 100%);
 }
 
 .secondary-button:hover {
-  background: linear-gradient(135deg, #5a6268 0%, #444b50 100%);
+  background: linear-gradient(135deg, #545a72 0%, #2d3d4c 100%);
   transform: translateY(-3px);
 }
 
