@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DynamicForm from '../Components/Form';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 import '../assets/styles/Form.css';
 
 const Contact = () => {
@@ -54,6 +55,20 @@ const Contact = () => {
     console.log('Form Submitted:', data);
     setConfettiVisible(true);
     setShowForm(false);
+
+    const templateParams = {
+      from_name: `${data.firstName} ${data.lastName}`,
+      from_email: data.email,
+      to_name: 'Recipient Name',
+      message: data.inquiry,
+    };
+
+    emailjs.send('service_5vipe0o', 'template_p7jsk6q', templateParams, 'VUOMiOuIrQtJLv6sQ')
+      .then((result) => {
+          console.log('Email successfully sent!', result.text);
+      }, (error) => {
+          console.error('Error sending email:', error.text);
+      });
   };
 
   return (

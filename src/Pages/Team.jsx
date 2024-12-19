@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import CustomCard from '../Components/TeamCard';
 import howard from '../assets/images/team/howard.jpeg';
+import Tymo from '../assets/images/team/Tymo.jpg';
 import "../assets/styles/Team.css";
 
 const team = [
@@ -28,7 +29,7 @@ const team = [
   {
     name: "Javier Esparza",
     role: "Backend/Frontend",
-    image: howard,
+    image: Tymo,
     color: "6420AA"
   },
 ];
