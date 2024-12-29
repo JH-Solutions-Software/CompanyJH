@@ -1,61 +1,89 @@
+/* Input Fields */
 .input {
     background-color: white;
     border-radius: 7px;
-    height: 35px;
-    border: none;
+    height: 40px;
+    border: 1px solid #ccc;
     color: #0f2027;
-    padding-left: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #61dafb;
+    outline: none;
 }
 
 .input::placeholder {
     color: #888; /* Placeholder text color */
-  }
-
-.form-container {
-    width: 450px;
-    height: 550px;
-    background-color: #2d3d4c;
-    border-radius: 30px;
-    margin-top: 20px;
 }
 
-.form-group{
+/* Form Container */
+.form-container {
+    width: 450px;
+    background-color: rgba(45, 61, 76, 0.8); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    transition: all 0.3s ease;
+}
+
+.form-container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Group */
+.form-group {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     position: relative;
 }
 
-.form-title{
-    align-items: center;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+/* Form Title */
+.form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
 }
 
+/* Submit Button */
 .submit {
     background-color: #eeb7cd;
     border: none;
     border-radius: 7px;
     height: 50px;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     display: flex; 
     align-items: center;
     justify-content: center;
 }
 
+.submit:hover {
+    background-color: #d69bb0;
+}
+
+/* Form */
 .form {
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
 }
 
+/* Contact Section */
 .contact-section {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
     display: flex;
     flex-direction: row;
 }
@@ -65,24 +93,29 @@
     margin-bottom: 100px;
 }
 
-.contact-info{
+.contact-info {
     width: 60%;
+    margin-top: 70px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 20px;
+    border-radius: 15px;
 }
 
-.contact-title{
+.contact-title {
     font-size: 2.5rem; 
     font-weight: bold;
-    text-align:left;
+    text-align: left;
     padding-left: 40px;
 }
 
-.contact-txt{
+.contact-txt {
     font-size: 1.2rem;
     padding-left: 40px;
     line-height: 35px;
     padding-right: 40px;
 }
 
+/* Error Message */
 .error-message { 
     color: red;
     left: 0; 
@@ -92,10 +125,93 @@
     position: absolute;
 }
 
-.contact-sent{
+/* Contact Sent Message */
+.contact-sent {
     align-items: center;
     align-content: center;
     text-align: center;
     padding: 20px;
     margin-top: 100px;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .form-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .contact-title, .contact-txt {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-txt {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-txt {
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+}
+
+.theme-button {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  backdrop-filter: blur(5px); /* Aplica el desenfoque */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.theme-button:hover {
+  backdrop-filter: blur(8px); /* Aumenta el desenfoque al pasar el cursor */
+}
+
+/* Ajustes para las imágenes de las banderas */
+.flag-icon {
+  width: 24px; /* Ajusta el ancho de la imagen */
+  height: 24px; /* Ajusta la altura de la imagen */
+  transition: transform 0.3s;
+}
+
+.theme-button:hover .flag-icon {
+  transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
 }

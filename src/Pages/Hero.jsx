@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { translate } from "../utils/translations"; // Import the translation function
 import '../assets/styles/Hero.css';
 
 export default function Hero() {
+  
   return (
-    <section className="hero-section spacer layer1">
+    <section className="hero-section">
       <div className="video-background">
         <video
           autoPlay
@@ -15,7 +17,7 @@ export default function Hero() {
         >
           <source src="/video-background.mp4" type="video/mp4" />
         </video>
-     
+        <div className="overlay"></div>
       </div>
       <div className="content-container">
         <motion.h1 

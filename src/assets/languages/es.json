@@ -1,0 +1,15 @@
+{
+    "header": {
+        "services": "Servicios",
+        "process": "Proceso",
+        "team": "Equipo",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "startTransformation": "Impulsamos la Transformación de tus Procesos Internos",
+        "InJHSoftware": "En JH Software Solutions, nos especializamos en entender tus necesidades y optimizar los procesos internos de tu negocio para alcanzar la máxima eficiencia.",
+        "buttonStart": "Comienza con tu transformación",
+        "learnMore": "Conoce más"
+    }
+}
